@@ -1,0 +1,51 @@
+" General
+set nocompatible
+syntax enable
+set number
+set encoding=utf-8
+
+" Status bar
+set laststatus=2
+set showcmd
+set ruler
+
+" Whitespace
+set nowrap
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+" Searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Vundle configuration
+" Set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Colorscheme
+Bundle 'Solarized'
+set background=dark
+let g:solarized_termcolors=16
+colorscheme solarized
+
+" Plugins
+Bundle 'ack.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'Tabular'
+Bundle 'NrrwRgn'
+
+" Macvim settings
+if has('gui_running')
+  set guifont=Consolas:h14
+  set guioptions=-r "Remove the scrollbar
+  set guioptions=-R "Remove the scrollbar
+  autocmd! GUIEnter * set vb t_vb= "Disable bell
+endif

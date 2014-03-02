@@ -1,0 +1,24 @@
+" Use VS Settings
+set vsvim_useeditordefaults
+
+" Searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Line numbers
+set number
+
+" Map Leader key to ,
+let mapleader=","
+
+" Shortcuts
+
+" Untabify lines
+map <leader>t :vsc Edit.UntabifySelectedLines<cr>
+
+" Build shortcuts
+map <leader>p :vsc Build.BuildSelection<cr>
+map <leader>s :vsc Build.BuildSolution<cr>
+map <leader>d :vsc Debug.Start<cr>

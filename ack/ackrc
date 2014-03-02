@@ -1,0 +1,5 @@
+--smart-case
+
+--type=text
+--type-set=config=.config
+--type-set=csproj=.csproj
