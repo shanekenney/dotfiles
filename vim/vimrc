@@ -47,6 +47,8 @@ if has('gui_running')
   set guifont=Consolas:h14
   set guioptions=-r "Remove the scrollbar
   set guioptions=-R "Remove the scrollbar
+  set guioptions=+e "Show graphical tabs
+
   autocmd! GUIEnter * set vb t_vb= "Disable bell
   set clipboard=unnamed "Yank and paste to and from the clipboard
 endif
