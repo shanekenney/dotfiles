@@ -48,4 +48,5 @@ if has('gui_running')
   set guioptions=-r "Remove the scrollbar
   set guioptions=-R "Remove the scrollbar
   autocmd! GUIEnter * set vb t_vb= "Disable bell
+  set clipboard=unnamed "Yank and paste to and from the clipboard
 endif
