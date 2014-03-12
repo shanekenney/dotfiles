@@ -21,4 +21,11 @@ map <leader>t :vsc Edit.UntabifySelectedLines<cr>
 " Build shortcuts
 map <leader>p :vsc Build.BuildSelection<cr>
 map <leader>s :vsc Build.BuildSolution<cr>
-map <leader>d :vsc Debug.Start<cr>
+cmap debug :vsc Debug.Start
+
+" Go to definition
+cmap def :vsc Edit.GoToDefinition
+map <leader>d :vsc Edit.GoToDefinition<cr>
+
+" Run Custom Tool - T4 Template
+map <leader>r :vsc Project.RunCustomTool<cr>
