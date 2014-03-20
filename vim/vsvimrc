@@ -21,7 +21,10 @@ map <leader>t :vsc Edit.UntabifySelectedLines<cr>
 " Build shortcuts
 map <leader>p :vsc Build.BuildSelection<cr>
 map <leader>s :vsc Build.BuildSolution<cr>
+cmap clean :vsc Build.CleanSolution
 cmap debug :vsc Debug.Start
+cmap dpause :vsc Debug.BreakAll
+cmap dstop :vsc Debug.StopDebugging
 
 " Go to definition
 cmap def :vsc Edit.GoToDefinition
