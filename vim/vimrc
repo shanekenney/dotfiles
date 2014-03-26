@@ -31,9 +31,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Colorscheme
-Bundle 'Solarized'
+Bundle 'altercation/vim-colors-solarized'
 set background=dark
-let g:solarized_termcolors=16
 colorscheme solarized
 
 " Plugins
@@ -44,7 +43,7 @@ Bundle 'NrrwRgn'
 
 " Macvim settings
 if has('gui_running')
-  set guifont=Consolas:h14
+  set guifont=Consolas:h13
   set guioptions=-r "Remove the scrollbar
   set guioptions=-R "Remove the scrollbar
   set guioptions=+e "Show graphical tabs
