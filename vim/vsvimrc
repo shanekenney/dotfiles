@@ -1,6 +1,8 @@
 " Use VS Settings
 set vsvim_useeditordefaults
 
+set backspace=indent,eol,start
+
 " Searching
 set hlsearch
 set incsearch
