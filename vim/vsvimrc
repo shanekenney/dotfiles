@@ -28,9 +28,11 @@ cmap debug :vsc Debug.Start
 cmap dpause :vsc Debug.BreakAll
 cmap dstop :vsc Debug.StopDebugging
 
-" Go to definition
+" Navigation
 cmap def :vsc Edit.GoToDefinition
 map <leader>d :vsc Edit.GoToDefinition<cr>
+cmap bwd :vsc View.NavigateBackward
+cmap fwd :vsc View.NavigateForward
 
 " Run Custom Tool - T4 Template
 map <leader>r :vsc Project.RunCustomTool<cr>
