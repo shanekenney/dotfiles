@@ -36,3 +36,7 @@ cmap fwd :vsc View.NavigateForward
 
 " Run Custom Tool - T4 Template
 map <leader>r :vsc Project.RunCustomTool<cr>
+
+" Commenting
+cmap com :vsc Edit.CommentSelection
+cmap ucom :vsc Edit.UncommentSelection
