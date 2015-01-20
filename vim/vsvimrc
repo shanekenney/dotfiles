@@ -12,6 +12,10 @@ set smartcase
 " Line numbers
 set number
 
+" Buffer at top and bottom of file
+" when scrolling
+set scrolloff=5
+
 " Map Leader key to ,
 let mapleader=","
 
@@ -23,20 +27,20 @@ map <leader>t :vsc Edit.UntabifySelectedLines<cr>
 " Build shortcuts
 map <leader>p :vsc Build.BuildSelection<cr>
 map <leader>s :vsc Build.BuildSolution<cr>
-cmap clean :vsc Build.CleanSolution
-cmap debug :vsc Debug.Start
-cmap dpause :vsc Debug.BreakAll
-cmap dstop :vsc Debug.StopDebugging
+cmap clean vsc Build.CleanSolution
+cmap debug vsc Debug.Start
+cmap dpause vsc Debug.BreakAll
+cmap dstop vsc Debug.StopDebugging
 
 " Navigation
-cmap def :vsc Edit.GoToDefinition
+cmap def vsc Edit.GoToDefinition
 map <leader>d :vsc Edit.GoToDefinition<cr>
-cmap bwd :vsc View.NavigateBackward
-cmap fwd :vsc View.NavigateForward
+cmap Bwd vsc View.NavigateBackward
+cmap Fwd vsc View.NavigateForward
 
 " Run Custom Tool - T4 Template
 map <leader>r :vsc Project.RunCustomTool<cr>
 
 " Commenting
-cmap com :vsc Edit.CommentSelection
-cmap ucom :vsc Edit.UncommentSelection
+map <leader>/ :vsc Edit.CommentSelection<cr>
+map <leader>\ :vsc Edit.UncommentSelection<cr>
