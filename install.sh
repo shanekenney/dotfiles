@@ -118,6 +118,11 @@ nvim +PlugInstall +qall
 nvim +UpdateRemotePlugins +qall
 
 echo "---------------------------------------------------------"
+echo "$(tput setaf 2)Setting MacOS defaults.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+source ./macos
+
+echo "---------------------------------------------------------"
 echo "$(tput setaf 2)Switching shell to zsh. You may need to logout.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
