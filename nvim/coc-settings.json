@@ -1,0 +1,22 @@
+{
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20,
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "json", "javascriptreact", "markdown", "elm", "yaml"],
+  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact"],
+  "diagnostic.errorSign": "●",
+  "diagnostic.warningSign": "●",
+  "diagnostic.infoSign": "●",
+  "tsserver.enableJavascript": false,
+  "signature.target": "float",
+  "prettier.proseWrap": "always",
+  "languageserver": {
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"],
+      "initializationOptions": {
+        "elmAnalyseTrigger": "change"
+      }
+    }
+  }
+}
