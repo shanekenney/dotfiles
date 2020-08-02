@@ -1,7 +1,4 @@
 #!/bin/sh
-echo "---------------------------------------------------------"
-echo "$(tput setaf 2)Greetings. Preparing to power up and begin diagnostics.$(tput sgr 0)"
-echo "---------------------------------------------------------"
 
 INSTALLDIR=$PWD
 
@@ -64,6 +61,12 @@ echo "$(tput setaf 2)Installing node neovim package$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
 npm install -g neovim
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)Installing pure prompt$(tput sgr 0)"
+echo "---------------------------------------------------------"
+
+npm install -g pure-prompt
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)Installing system fonts.$(tput sgr 0)"
