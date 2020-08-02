@@ -1,5 +1,7 @@
 [push]
         default = current
+[pull]
+        rebase = true
 [commit]
         verbose = true
 [core]

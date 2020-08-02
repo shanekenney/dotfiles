@@ -108,6 +108,8 @@ echo "---------------------------------------------------------"
 ln -s $HOME/dotfiles/nvim $HOME/.config/nvim
 ln -s $HOME/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -s $HOME/dotfiles/rgrc $HOME/.rgrc
+ln -s $HOME/dotfiles/git/gitconfig $HOME/.gitconfig
+ln -s $HOME/dotfiles/git/gitignore $HOME/.gitignore
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)Installing vim plugins.$(tput sgr 0)"
