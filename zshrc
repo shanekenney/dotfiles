@@ -1,7 +1,6 @@
+export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME=""
-
-source $ZSH/oh-my-zsh.sh
 
 autoload -U promptinit; promptinit
 prompt pure
@@ -13,7 +12,11 @@ plugins=(
   git
   tmux
   z
+  fzf
 )
 
+source $ZSH/oh-my-zsh.sh
+
+alias vim='nvim'
 alias ls='gls --color -h --group-directories-first'
 
