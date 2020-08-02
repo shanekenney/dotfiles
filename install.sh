@@ -102,6 +102,20 @@ if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
 fi
 
 echo "---------------------------------------------------------"
+echo "$(tput setaf 2)Linking dotfiles.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+
+ln -s $HOME/dotfiles/nvim $HOME/.config/nvim
+ln -s $HOME/dotfiles/tmux.conf $HOME/.tmux.conf
+ln -s $HOME/dotfiles/rgrc $HOME/.rgrc
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)Installing vim plugins.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+nvim +PlugInstall +qall
+nvim +UpdateRemotePlugins +qall
+
+echo "---------------------------------------------------------"
 echo "$(tput setaf 2)Switching shell to zsh. You may need to logout.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
