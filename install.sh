@@ -23,6 +23,7 @@ echo "$(tput setaf 2)Installing system packages.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
 packages=(
+  "awscli"
   "bat"
   "coreutils"
   "curl"
