@@ -15,8 +15,6 @@ plugins=(
   fzf
 )
 
-source $ZSH/oh-my-zsh.sh
-
 alias vim='nvim'
 alias ls='gls --color -h --group-directories-first'
 
