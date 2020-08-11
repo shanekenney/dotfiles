@@ -52,6 +52,12 @@ do
 done
 
 echo "---------------------------------------------------------"
+echo "$(tput setaf 2)Installing nvm.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+echo "---------------------------------------------------------"
 echo "$(tput setaf 2)Installing Python NeoVim client.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
