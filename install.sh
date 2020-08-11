@@ -52,10 +52,11 @@ do
 done
 
 echo "---------------------------------------------------------"
-echo "$(tput setaf 2)Installing nvm.$(tput sgr 0)"
+echo "$(tput setaf 2)Installing nvm and yarn.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+curl -o- -L https://yarnpkg.com/install.sh | bash
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)Installing Python NeoVim client.$(tput sgr 0)"
@@ -119,10 +120,12 @@ ln -s $HOME/dotfiles/git/gitconfig $HOME/.gitconfig
 ln -s $HOME/dotfiles/git/gitignore $HOME/.gitignore
 
 echo "---------------------------------------------------------"
-echo "$(tput setaf 2)Installing vim plugins.$(tput sgr 0)"
+echo "$(tput setaf 2)Installing vim plugins and CoC extensions.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 nvim +PlugInstall +qall
 nvim +UpdateRemotePlugins +qall
+
+nvim +"CocInstall -sync coc-json coc-prettier coc-eslint coc-css coc-tsserver" +qall
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)Setting MacOS defaults.$(tput sgr 0)"
