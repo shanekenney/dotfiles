@@ -31,6 +31,7 @@ packages=(
   "fd"
   "fzf"
   "git"
+  "htop"
   "jq"
   "mtr"
   "ncdu"
