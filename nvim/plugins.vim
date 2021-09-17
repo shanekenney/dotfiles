@@ -27,7 +27,13 @@ Plug 'cocopon/iceberg.vim'
 Plug 'ayu-theme/ayu-vim'
 
 " Denite - Fuzzy finding, buffer management
-Plug 'Shougo/denite.nvim'
+"Plug 'Shougo/denite.nvim'
+
+" Telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'fannheyward/telescope-coc.nvim'
 
 " Language pack
 Plug 'sheerun/vim-polyglot'
