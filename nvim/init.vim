@@ -27,6 +27,9 @@ set hlsearch
 
 set termguicolors
 
+" Use vertical diff split
+set diffopt+=vertical
+
 " === TAB/Space settings === "
 " Insert spaces when TAB is pressed.
 set expandtab
@@ -241,3 +244,5 @@ endfunction
 set tabline=%!MyTabLine()
 
 let g:polyglot_disabled = ['yml']
+
+let g:user_emmet_leader_key='<C-Z>'

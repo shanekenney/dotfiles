@@ -44,5 +44,11 @@ Plug 'scrooloose/nerdcommenter'
 " Git
 Plug 'tpope/vim-fugitive'
 
+" Haskell Formatting
+Plug 'sdiehl/vim-ormolu'
+
+" Emmet
+Plug 'mattn/emmet-vim'
+
 " Initialize plugin system
 call plug#end()

@@ -1,14 +1,30 @@
 {
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "json", "javascriptreact", "markdown", "elm", "yaml"],
-  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "javascriptreact",
+    "markdown",
+    "elm",
+    "yaml",
+    "css"
+  ],
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact"
+  ],
   "diagnostic.errorSign": "●",
   "diagnostic.warningSign": "●",
   "diagnostic.infoSign": "●",
-  "tsserver.enableJavascript": false,
+  "tsserver.enableJavascript": true,
   "signature.target": "float",
   "prettier.proseWrap": "always",
+  "prettier.htmlWhitespaceSensitivity": "ignore",
   "languageserver": {
     "elmLS": {
       "command": "elm-language-server",
@@ -17,6 +33,18 @@
       "initializationOptions": {
         "elmAnalyseTrigger": "change"
       }
+    },
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml",
+        "hie.yaml"
+      ],
+      "filetypes": ["haskell", "lhaskell"]
     }
   }
 }
