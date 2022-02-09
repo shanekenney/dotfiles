@@ -52,17 +52,19 @@ inoremap jk <ESC>
 set scrolloff=10
 
 syntax enable
-colorscheme iceberg
+let g:tokyonight_style = "night"
+colorscheme tokyonight
 
-"=== Telescope Config ===
-lua << EOF
-require('telescope').load_extension('fzf')
-require('telescope').load_extension('coc')
-EOF
+"=== Load Telescope Config ===
+lua require('telescope')
 
-nnoremap ; :Telescope buffers<CR>
-nnoremap <leader>p :Telescope git_files<CR>
-nnoremap <leader>g :Telescope live_grep<CR>
+nnoremap ; :Telescope buffers theme=dropdown<CR>
+nnoremap <leader>p :Telescope git_files theme=dropdown previewer=false prompt_title=false<CR>
+"nnoremap <leader>p :Telescope find_files theme=dropdown previewer=false prompt_title=false<CR>
+nnoremap <leader>s :Telescope coc document_symbols theme=dropdown prompt_title=false<CR>
+nnoremap <leader>g :Telescope live_grep theme=dropdown<CR>
+nnoremap <leader>d :Telescope find_files cwd=~/dotfiles theme=dropdown<CR>
+nmap <silent> gr :Telescope coc references theme=dropdown initial_mode=normal<CR>
 
 " === Coc bindings ===
 
@@ -74,7 +76,6 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)

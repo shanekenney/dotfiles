@@ -25,9 +25,7 @@ Plug 'connorholyday/vim-snazzy'
 Plug 'haishanh/night-owl.vim'
 Plug 'cocopon/iceberg.vim'
 Plug 'ayu-theme/ayu-vim'
-
-" Denite - Fuzzy finding, buffer management
-"Plug 'Shougo/denite.nvim'
+Plug 'folke/tokyonight.nvim'
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
@@ -55,6 +53,9 @@ Plug 'sdiehl/vim-ormolu'
 
 " Emmet
 Plug 'mattn/emmet-vim'
+
+" Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 " Initialize plugin system
 call plug#end()
