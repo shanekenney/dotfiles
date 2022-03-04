@@ -13,6 +13,7 @@ plugins=(
   tmux
   z
   fzf
+  kubectl
 )
 
 alias vim='nvim'

@@ -15,7 +15,7 @@ else
   echo "--------------------------------------------------------"
   echo "$(tput setaf 3)Installing Homebrew. Homebrew requires osx command lines tools, please download xcode first$(tput sgr 0)"
   echo "---------------------------------------------------------"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 echo "---------------------------------------------------------"
@@ -82,7 +82,7 @@ echo "$(tput setaf 2)Installing system fonts.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install --cask font-fira-code
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)Installing oh-my-zsh.$(tput sgr 0)"
